@@ -7,11 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tinkov_project" />
+        <module name="tinkoff" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bot" target="17" />
+      <module name="link-parser" target="17" />
+      <module name="scrapper" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="tinkoff" options="-parameters" />
       <module name="tinkov_project" options="-parameters" />
     </option>
   </component>

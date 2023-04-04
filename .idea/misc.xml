@@ -7,5 +7,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/bot/pom.xml" />
+        <option value="$PROJECT_DIR$/link-parser/pom.xml" />
+        <option value="$PROJECT_DIR$/scrapper/pom.xml" />
+      </set>
+    </option>
   </component>
 </project>
