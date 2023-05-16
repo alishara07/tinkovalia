@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="tinkov_project" />
         <module name="tinkoff" />
+        <module name="tinkovalia" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +21,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="tinkoff" options="-parameters" />
       <module name="tinkov_project" options="-parameters" />
+      <module name="tinkovalia" options="-parameters" />
     </option>
   </component>
 </project>

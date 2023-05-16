@@ -1,8 +1,9 @@
 server:
-  port: 8080
+  port: 8081
 app:
-  test: 1235
-  token: "5659789777:AAHulErrrvaJI7kBIvLr6bxx9YlStcpU_M0"
+  test: 123
+  scheduler:
+    interval: 15000
 springdoc:
   api-docs:
     enabled: true
@@ -11,10 +12,29 @@ springdoc:
     enabled: true
     path: /swagger-ui
 
+spring:
+  jpa:
+    database: postgresql
+  datasource:
+    password: postgres
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/scrapper
+  profiles:
+    active: prometheus
+logging:
+  level:
+    org:
+      hibernate:
+        sql: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: Trace
 
 management:
     server:
-        port: 8083
+        port: 8084
     endpoints:
         web:
             base-path: /
@@ -31,7 +51,6 @@ management:
                     liveness.include: ping
             prometheus.enabled: true
             tags:
-                application: bot
-spring:
-    profiles:
-        active: prometheus
+                application: scrapper
+
+
